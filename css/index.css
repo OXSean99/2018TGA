@@ -1,0 +1,227 @@
+@charset "gb2312";
+/* CSS Document */
+.banner1 {
+	background: url(../images/tga3.jpg)no-repeat center;
+	height: 300px;
+	margin: 10px auto;
+	width: 700px;
+	font-size: 17.5px;
+	font-family: "Microsoft Yahei";
+}
+.banner2 {
+	background: url(../images/tga4.jpg)no-repeat center;
+	height: 300px;
+	margin: 10px auto;
+	width: 700px;
+}
+.banner3 {
+	height: 300px;
+	margin: 10px auto;
+	width: 700px;
+}
+.texts {
+	line-height: 36px;
+	padding: 90px 0 0 40px;
+	text-shadow: 1px 1px rgba(255,255,255,0.3);
+}
+.texts p {
+	color:#FC0A34;
+	transition: all 0.5s;
+	transform: translate(60px);
+}
+.texts p:hover {
+	padding-left: 20px
+}
+.texts p:nth-child(1) {
+	animation: animations 0.5s ease-out 0.5s backwards;
+}
+.texts p:nth-child(2) {
+	animation: animations 0.5s ease-out 0.5s backwards;
+}
+@-webkit-keyframes animations {
+0% {
+-webkit-transform:translate(0);
+opacity:0;
+}
+ 50% {
+-webkit-transform:translate(30px);
+opacity:.5;
+}
+ 100% {
+-webkit-transform:translate(60px);
+opacity:1;
+}
+}
+@-moz-keyframes animations {
+0% {
+-moz-transform:translate(0);
+opacity:0;
+}
+ 50% {
+-moz-transform:translate(30px);
+opacity:.5;
+}
+ 100% {
+-moz-transform:translate(60px);
+opacity:1;
+}
+}
+@-o-keyframes animations {
+0% {
+-o-transform:translate(0);
+opacity:0;
+}
+ 50% {
+-o-transform:translate(30px);
+opacity:.5;
+}
+ 100% {
+-o-transform:translate(60px);
+opacity:1;
+}
+}
+@-ms-keyframes animations {
+0% {
+-ms-transform:translate(0);
+opacity:0;
+}
+ 50% {
+-ms-transform:translate(30px);
+opacity:.5;
+}
+ 100% {
+-ms-transform:translate(60px);
+opacity:1;
+}
+}
+@keyframes animations {
+0% {
+transform:translate(0);
+opacity:0;
+}
+ 50% {
+transform:translate(30px);
+opacity:.5;
+}
+ 100% {
+transform:translate(60px);
+opacity:1;
+}
+}
+.bloglist h2 {
+	border-bottom: #474645 2px solid;
+	margin: 0 8px 20px 8px;
+	height: 26px;
+	overflow: hidden;
+	line-height: 28px;
+	font-size: 16px;
+	font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+	letter-spacing: 2px
+}
+.bloglist h2 p {
+	background: #474645;
+	width: 180px;
+	color: #fff;
+	text-align: center;
+	box-shadow: #999 4px 5px 1px;
+}
+.bloglist h2 p span {
+	color: #38b3d4;
+}
+.blogs {
+	margin: 0 20px 20px 20px;
+	position: relative;
+}
+.blogs h3 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	transition: all .5s
+}
+
+.blogs h3:hover {
+	text-decoration: underline
+}
+.blogs figure {
+	float: left;
+	width: 25%;
+	overflow: hidden;
+}
+.blogs figure img {
+	width: 100%;
+	margin: auto;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.blogs figure:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+.blogs ul {
+	float: right;
+	line-height: 20px;
+	width: 72%;
+	color: #474645;
+}
+.blogs ul:hover {
+	cursor: pointer;
+}
+.blank {
+	overflow: hidden;
+	clear: both;
+	margin: 10px 0 0 0;
+	display: inline-block;
+	line-height: 26px;
+	height: 26px;
+	background: #f6f6f6;
+	width: 100%
+}
+
+.blogs::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	background: #cac1c1;
+	border: 2px solid #fff;
+	left: -27px;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+.blogs:hover::before {
+	background: #474645
+}
+.view {
+	position: absolute;
+	left: -130px;
+	top: 0px;
+	z-index: 1;
+	color: #F5F5F5;
+}
+.blogs::after {
+	content: "";
+	width: 121px;
+	height: 30px;
+	position: absolute;
+	left: -148px;
+	top: -9px;
+	z-index: 0;
+	background:  url(../images/ti.png) no-repeat;
+	opacity: 0;
+	transition: all 1s;
+}
+.blogs:hover::after {
+	opacity: 1
+}
+
+.bdsharebuttonbox {
+	margin: 20px;
+	clear: both;
+}
